@@ -7,16 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts",
-    "postinstall": "prisma generate",
-    "deploy": "node deploy-netlify.js",
-    "setup": "npm install && npx prisma generate && npm run build"
+    "deploy": "node deploy-netlify.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
-    "@prisma/client": "^5.7.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -28,7 +22,6 @@
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "postcss": "^8",
-    "prisma": "^5.7.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
