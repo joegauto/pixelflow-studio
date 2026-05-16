@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://flujopy.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/
+
+# Allow important pages
+Allow: /
+Allow: /servicios/
+Allow: /nosotros/
+Allow: /blog/
+Allow: /contacto/
+Allow: /casos-exito/
+
+# Crawl delay
+Crawl-delay: 1

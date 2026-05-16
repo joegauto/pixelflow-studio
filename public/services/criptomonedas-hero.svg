@@ -1,0 +1,176 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="cryptoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="coinGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="blockchainGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#22c55e;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#cryptoBg)"/>
+  
+  <!-- Blockchain visualization -->
+  <g transform="translate(100, 200)">
+    <!-- Block chain -->
+    <rect x="0" y="50" width="80" height="60" rx="8" fill="#1e293b" stroke="#0ea5e9" stroke-width="2"/>
+    <text x="40" y="75" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0ea5e9" text-anchor="middle">Block 1</text>
+    <text x="40" y="90" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Hash: a1b2c3</text>
+    
+    <rect x="120" y="50" width="80" height="60" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="160" y="75" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#22c55e" text-anchor="middle">Block 2</text>
+    <text x="160" y="90" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Hash: d4e5f6</text>
+    
+    <rect x="240" y="50" width="80" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="280" y="75" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">Block 3</text>
+    <text x="280" y="90" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Hash: g7h8i9</text>
+    
+    <!-- Chain connections -->
+    <line x1="80" y1="80" x2="120" y2="80" stroke="url(#blockchainGradient)" stroke-width="4"/>
+    <line x1="200" y1="80" x2="240" y2="80" stroke="url(#blockchainGradient)" stroke-width="4"/>
+    
+    <!-- Chain arrows -->
+    <polygon points="115,75 125,80 115,85" fill="#22c55e"/>
+    <polygon points="235,75 245,80 235,85" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Bitcoin coin -->
+  <g transform="translate(500, 150)">
+    <circle cx="100" cy="100" r="70" fill="url(#coinGlow)"/>
+    <circle cx="100" cy="100" r="50" fill="#f59e0b" stroke="#d97706" stroke-width="3"/>
+    
+    <!-- Bitcoin symbol -->
+    <text x="100" y="115" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">₿</text>
+    
+    <!-- Rotating ring -->
+    <circle cx="100" cy="100" r="65" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" stroke-dasharray="10,5">
+      <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Crypto wallet interface -->
+  <rect x="750" y="120" width="350" height="280" rx="15" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Wallet header -->
+  <rect x="750" y="120" width="350" height="50" rx="15" fill="#334155"/>
+  <text x="770" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Crypto Wallet</text>
+  <circle cx="1070" cy="145" r="8" fill="#22c55e"/>
+  <text x="1085" y="150" font-family="Arial, sans-serif" font-size="12" fill="#22c55e">Secure</text>
+  
+  <!-- Balance display -->
+  <rect x="770" y="180" width="310" height="60" rx="8" fill="#0f172a"/>
+  <text x="925" y="200" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Balance Total</text>
+  <text x="925" y="225" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">$47,832.50</text>
+  
+  <!-- Crypto holdings -->
+  <rect x="770" y="250" width="90" height="70" rx="8" fill="#f59e0b" opacity="0.1" stroke="#f59e0b"/>
+  <text x="815" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">BTC</text>
+  <text x="815" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">1.2547</text>
+  <text x="815" y="300" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">+2.4%</text>
+  
+  <rect x="870" y="250" width="90" height="70" rx="8" fill="#0ea5e9" opacity="0.1" stroke="#0ea5e9"/>
+  <text x="915" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0ea5e9" text-anchor="middle">ETH</text>
+  <text x="915" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">15.847</text>
+  <text x="915" y="300" font-family="Arial, sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">+5.7%</text>
+  
+  <rect x="970" y="250" width="90" height="70" rx="8" fill="#8b5cf6" opacity="0.1" stroke="#8b5cf6"/>
+  <text x="1015" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">ADA</text>
+  <text x="1015" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2,847</text>
+  <text x="1015" y="300" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">-1.2%</text>
+  
+  <!-- Transaction buttons -->
+  <rect x="770" y="340" width="100" height="35" rx="18" fill="#22c55e"/>
+  <text x="820" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Comprar</text>
+  
+  <rect x="880" y="340" width="100" height="35" rx="18" fill="#ef4444"/>
+  <text x="930" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Vender</text>
+  
+  <rect x="990" y="340" width="90" height="35" rx="18" fill="#0ea5e9"/>
+  <text x="1035" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Enviar</text>
+  
+  <!-- Price chart -->
+  <g transform="translate(150, 350)">
+    <rect x="0" y="0" width="400" height="150" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="200" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Gráfico de Precios - BTC/USD</text>
+    
+    <!-- Chart grid -->
+    <g opacity="0.2">
+      <line x1="50" y1="40" x2="50" y2="130" stroke="#64748b"/>
+      <line x1="150" y1="40" x2="150" y2="130" stroke="#64748b"/>
+      <line x1="250" y1="40" x2="250" y2="130" stroke="#64748b"/>
+      <line x1="350" y1="40" x2="350" y2="130" stroke="#64748b"/>
+      
+      <line x1="30" y1="60" x2="370" y2="60" stroke="#64748b"/>
+      <line x1="30" y1="90" x2="370" y2="90" stroke="#64748b"/>
+      <line x1="30" y1="120" x2="370" y2="120" stroke="#64748b"/>
+    </g>
+    
+    <!-- Price line -->
+    <path d="M30 100 L80 85 L130 95 L180 70 L230 75 L280 60 L330 65 L370 50" 
+          stroke="#22c55e" stroke-width="3" fill="none"/>
+    
+    <!-- Price points -->
+    <circle cx="80" cy="85" r="3" fill="#22c55e"/>
+    <circle cx="180" cy="70" r="3" fill="#22c55e"/>
+    <circle cx="280" cy="60" r="3" fill="#22c55e"/>
+    <circle cx="370" cy="50" r="3" fill="#22c55e"/>
+    
+    <!-- Price labels -->
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">$42K</text>
+    <text x="370" y="140" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Hoy</text>
+    <text x="370" y="45" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">$48.2K</text>
+  </g>
+  
+  <!-- Mining visualization -->
+  <g transform="translate(650, 450)">
+    <rect x="0" y="0" width="200" height="80" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="100" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Mining Pool</text>
+    
+    <!-- Hash rate -->
+    <text x="20" y="40" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Hash Rate:</text>
+    <text x="180" y="40" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#22c55e" text-anchor="end">127.5 TH/s</text>
+    
+    <!-- Miners -->
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Miners:</text>
+    <text x="180" y="55" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0ea5e9" text-anchor="end">2,847</text>
+    
+    <!-- Rewards -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Rewards:</text>
+    <text x="180" y="70" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="end">6.25 BTC</text>
+  </g>
+  
+  <!-- Floating crypto symbols -->
+  <g opacity="0.3">
+    <text x="50" y="150" font-family="Arial, sans-serif" font-size="20" fill="#f59e0b">₿</text>
+    <text x="1150" y="200" font-family="Arial, sans-serif" font-size="16" fill="#0ea5e9">Ξ</text>
+    <text x="100" y="500" font-family="Arial, sans-serif" font-size="14" fill="#8b5cf6">₳</text>
+    <text x="1100" y="450" font-family="Arial, sans-serif" font-size="18" fill="#22c55e">◊</text>
+  </g>
+  
+  <!-- Network nodes -->
+  <g opacity="0.4">
+    <circle cx="200" cy="100" r="4" fill="#0ea5e9"/>
+    <circle cx="400" cy="80" r="3" fill="#22c55e"/>
+    <circle cx="800" cy="90" r="5" fill="#f59e0b"/>
+    <circle cx="1000" cy="110" r="3" fill="#8b5cf6"/>
+    
+    <!-- Connections -->
+    <line x1="200" y1="100" x2="400" y2="80" stroke="#64748b" stroke-width="1" opacity="0.5"/>
+    <line x1="400" y1="80" x2="800" y2="90" stroke="#64748b" stroke-width="1" opacity="0.5"/>
+    <line x1="800" y1="90" x2="1000" y2="110" stroke="#64748b" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">Blockchain &amp; Criptomonedas</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="18" fill="#fbbf24" text-anchor="middle">Soluciones blockchain y gestión de activos digitales</text>
+</svg>

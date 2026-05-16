@@ -1,0 +1,11 @@
+<!-- Service card image placeholder -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect x="100" y="100" width="600" height="400" rx="20" fill="#dc2626"/>
+  <polygon points="400,180 450,230 400,280 350,230" fill="white"/>
+  <rect x="380" y="210" width="40" height="40" rx="5" fill="#dc2626"/>
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">🔒</text>
+  <circle cx="250" cy="350" r="30" fill="white" opacity="0.3"/>
+  <circle cx="550" cy="350" r="30" fill="white" opacity="0.3"/>
+  <rect x="320" y="380" width="160" height="40" rx="20" fill="white" opacity="0.2"/>
+</svg>

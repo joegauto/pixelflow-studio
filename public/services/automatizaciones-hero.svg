@@ -1,0 +1,127 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="autoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#164e63;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#autoBg)"/>
+  
+  <!-- Workflow diagram -->
+  <g transform="translate(150, 150)">
+    <!-- Process boxes -->
+    <rect x="0" y="50" width="120" height="80" rx="12" fill="#0ea5e9" stroke="#0284c7" stroke-width="2"/>
+    <text x="60" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Trigger</text>
+    <text x="60" y="100" font-family="Arial, sans-serif" font-size="10" fill="#bae6fd" text-anchor="middle">Email recibido</text>
+    
+    <rect x="200" y="50" width="120" height="80" rx="12" fill="#10b981" stroke="#059669" stroke-width="2"/>
+    <text x="260" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Procesar</text>
+    <text x="260" y="100" font-family="Arial, sans-serif" font-size="10" fill="#bbf7d0" text-anchor="middle">Extraer datos</text>
+    
+    <rect x="400" y="50" width="120" height="80" rx="12" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+    <text x="460" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Validar</text>
+    <text x="460" y="100" font-family="Arial, sans-serif" font-size="10" fill="#fde68a" text-anchor="middle">Verificar formato</text>
+    
+    <rect x="600" y="50" width="120" height="80" rx="12" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2"/>
+    <text x="660" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Guardar</text>
+    <text x="660" y="100" font-family="Arial, sans-serif" font-size="10" fill="#ddd6fe" text-anchor="middle">Base de datos</text>
+    
+    <!-- Arrows -->
+    <path d="M125 90 L195 90" stroke="#ffffff" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M325 90 L395 90" stroke="#ffffff" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M525 90 L595 90" stroke="#ffffff" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Branch arrows -->
+    <path d="M260 130 L260 180 L460 180 L460 130" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    <text x="360" y="175" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Error: Reenviar</text>
+    
+    <!-- Success path -->
+    <path d="M660 130 L660 200 L60 200 L60 250" stroke="#22c55e" stroke-width="2" fill="none"/>
+    <rect x="0" y="250" width="120" height="60" rx="12" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+    <text x="60" y="275" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Notificar</text>
+    <text x="60" y="290" font-family="Arial, sans-serif" font-size="10" fill="#bbf7d0" text-anchor="middle">Proceso completo</text>
+  </g>
+  
+  <!-- Dashboard mockup -->
+  <rect x="800" y="100" width="350" height="250" rx="15" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Dashboard header -->
+  <rect x="800" y="100" width="350" height="50" rx="15" fill="#334155"/>
+  <text x="820" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Panel de Automatización</text>
+  <circle cx="1120" cy="125" r="8" fill="#22c55e"/>
+  
+  <!-- Stats cards -->
+  <rect x="820" y="170" width="100" height="60" rx="8" fill="#0ea5e9" opacity="0.8"/>
+  <text x="870" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">247</text>
+  <text x="870" y="205" font-family="Arial, sans-serif" font-size="10" fill="#bae6fd" text-anchor="middle">Procesos hoy</text>
+  
+  <rect x="940" y="170" width="100" height="60" rx="8" fill="#10b981" opacity="0.8"/>
+  <text x="990" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">98.5%</text>
+  <text x="990" y="205" font-family="Arial, sans-serif" font-size="10" fill="#bbf7d0" text-anchor="middle">Éxito</text>
+  
+  <rect x="1060" y="170" width="80" height="60" rx="8" fill="#f59e0b" opacity="0.8"/>
+  <text x="1100" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">3.2h</text>
+  <text x="1100" y="205" font-family="Arial, sans-serif" font-size="10" fill="#fde68a" text-anchor="middle">Ahorrado</text>
+  
+  <!-- Activity log -->
+  <rect x="820" y="250" width="310" height="80" rx="8" fill="#0f172a"/>
+  <text x="830" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Actividad Reciente</text>
+  
+  <circle cx="840" cy="285" r="3" fill="#22c55e"/>
+  <text x="850" y="290" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Factura procesada - Cliente ABC</text>
+  
+  <circle cx="840" cy="300" r="3" fill="#0ea5e9"/>
+  <text x="850" y="305" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Email enviado - Campaña Marketing</text>
+  
+  <circle cx="840" cy="315" r="3" fill="#f59e0b"/>
+  <text x="850" y="320" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Backup completado - Base de datos</text>
+  
+  <!-- Integration icons -->
+  <g transform="translate(100, 400)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Integraciones:</text>
+    
+    <!-- API boxes -->
+    <rect x="0" y="40" width="80" height="50" rx="8" fill="#334155" stroke="#0ea5e9" stroke-width="2"/>
+    <text x="40" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0ea5e9" text-anchor="middle">Gmail</text>
+    
+    <rect x="100" y="40" width="80" height="50" rx="8" fill="#334155" stroke="#22c55e" stroke-width="2"/>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">Slack</text>
+    
+    <rect x="200" y="40" width="80" height="50" rx="8" fill="#334155" stroke="#f59e0b" stroke-width="2"/>
+    <text x="240" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">Zapier</text>
+    
+    <rect x="300" y="40" width="80" height="50" rx="8" fill="#334155" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="340" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Make</text>
+    
+    <!-- Connection lines -->
+    <line x1="85" y1="65" x2="95" y2="65" stroke="#64748b" stroke-width="2"/>
+    <line x1="185" y1="65" x2="195" y2="65" stroke="#64748b" stroke-width="2"/>
+    <line x1="285" y1="65" x2="295" y2="65" stroke="#64748b" stroke-width="2"/>
+  </g>
+  
+  <!-- Floating elements -->
+  <circle cx="50" cy="100" r="20" fill="#0ea5e9" opacity="0.3"/>
+  <circle cx="1150" cy="500" r="30" fill="#22c55e" opacity="0.2"/>
+  <rect x="1050" y="50" width="40" height="40" rx="20" fill="#f59e0b" opacity="0.25"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">Automatización de Procesos</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="18" fill="#67e8f9" text-anchor="middle">Workflows inteligentes que ahorran tiempo y reducen errores</text>
+</svg>

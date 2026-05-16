@@ -1,0 +1,11 @@
+<!-- Placeholder: Replace with actual image -->
+<!-- Recommended: AI visualization, neural networks, data analysis -->
+<!-- Size: 1200x600px, Format: JPG, Max: 500KB -->
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#7c3aed"/>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle">Inteligencia Artificial</text>
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="24" fill="#ddd6fe" text-anchor="middle">Chatbots y análisis predictivo</text>
+  <circle cx="200" cy="150" r="40" fill="#22c55e" opacity="0.4"/>
+  <circle cx="1000" cy="450" r="70" fill="#0ea5e9" opacity="0.4"/>
+  <polygon points="600,100 650,150 600,200 550,150" fill="white" opacity="0.2"/>
+</svg>

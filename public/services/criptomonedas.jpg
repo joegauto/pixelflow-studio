@@ -1,0 +1,15 @@
+<!-- Service card image placeholder -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect x="100" y="100" width="600" height="400" rx="20" fill="#6366f1"/>
+  <circle cx="400" cy="300" r="80" fill="#f59e0b"/>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle">₿</text>
+  <rect x="200" y="200" width="60" height="60" rx="10" fill="white" opacity="0.3"/>
+  <rect x="540" y="200" width="60" height="60" rx="10" fill="white" opacity="0.3"/>
+  <rect x="200" y="340" width="60" height="60" rx="10" fill="white" opacity="0.3"/>
+  <rect x="540" y="340" width="60" height="60" rx="10" fill="white" opacity="0.3"/>
+  <line x1="260" y1="230" x2="320" y2="270" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="480" y1="270" x2="540" y2="230" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="260" y1="370" x2="320" y2="330" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="480" y1="330" x2="540" y2="370" stroke="white" stroke-width="3" opacity="0.6"/>
+</svg>
