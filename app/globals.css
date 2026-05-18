@@ -1,109 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
   }
-  
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
   body {
-    @apply font-sans text-gray-200 bg-slate-900;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display text-white;
-    font-weight: 700;
-  }
-  
-  h1 { font-weight: 800; }
-  h2 { font-weight: 800; }
-}
-
-@layer components {
-  .btn-primary {
-    @apply bg-green-500 hover:bg-green-400 text-slate-900 font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-green-500/25 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-slate-900;
-  }
-  
-  .btn-secondary {
-    @apply bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-sky-500/25 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-900;
-  }
-  
-  .btn-outline {
-    @apply border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-slate-900 font-semibold py-4 px-8 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-slate-900;
-  }
-  
-  .card {
-    @apply bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-700/50 hover:border-slate-600/50;
-  }
-  
-  .section-padding {
-    @apply py-20 lg:py-32;
-  }
-  
-  .container-custom {
-    @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-12;
-  }
-  
-  .gradient-bg {
-    background: linear-gradient(135deg, #38bdf8 0%, #22c55e 100%);
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-green-400 to-sky-400 bg-clip-text text-transparent;
-  }
-}
-
-@layer utilities {
-  .animation-delay-200 {
-    animation-delay: 200ms;
-  }
-  
-  .animation-delay-400 {
-    animation-delay: 400ms;
-  }
-  
-  .animation-delay-600 {
-    animation-delay: 600ms;
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-600 rounded-full;
+  background: rgb(203, 213, 225);
+  border-radius: 100px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(55, 65, 81);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-500;
+  background: rgb(148, 163, 184);
 }
 
-/* Focus styles for accessibility */
-.focus-visible:focus {
-  @apply outline-none ring-2 ring-green-500 ring-offset-2 ring-offset-slate-900;
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgb(75, 85, 99);
 }
 
-/* Loading animation */
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.animate-pulse-slow {
-  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.2s ease-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600;
+}
+
+/* Glass effect */
+.glass {
+  @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl;
 }
